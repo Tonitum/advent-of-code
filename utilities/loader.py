@@ -1,6 +1,6 @@
 from os import path
 
-def load_input(source_path: str, filename: str) -> list[str]:
+def load_input(source_path: str, filename: str) -> list:
     full_path = path.join(source_path, filename)
 
     if not path.exists(full_path):
