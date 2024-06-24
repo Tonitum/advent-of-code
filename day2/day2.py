@@ -1,13 +1,10 @@
-from utilities.loader import load_input
+from utilities.day import Day
 
-class DayTwo:
+class DayTwo(Day):
     MAX_COUNTS = {}
     MAX_COUNTS["red"] = 12
     MAX_COUNTS["green"] = 13
     MAX_COUNTS["blue"] = 14
-
-    def get_input_lines(self, file_path, file_name) -> list:
-        return load_input(file_path, file_name)
 
     def is_round_possible(self, round_string: str) -> bool:
         color_counts = round_string.strip().split(",")

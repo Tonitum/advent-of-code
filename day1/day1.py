@@ -1,9 +1,6 @@
-from utilities.loader import load_input
+from utilities.day import Day
 
-class DayOne:
-    def get_input_lines(self, file_path, file_name) -> list:
-        return load_input(file_path, file_name)
-
+class DayOne(Day):
     def parse_line(self, line: str) -> int:
         """
         Find the first integer in a line and the last integer in a line, and
