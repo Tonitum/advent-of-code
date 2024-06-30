@@ -39,7 +39,7 @@ class TestDay3:
         assert res == 1234
         assert index == 4
 
-    def test_example_file(self):
+    def test_example_file1(self):
         runner = DayThree()
         test_path = os.path.dirname(os.path.realpath(__file__))
         test_name = "example_input_1.txt"
@@ -82,7 +82,7 @@ class TestDay3:
         pos = 3
         runner = DayThree()
         res = runner.get_gear_number(pos, lines[1], lines[0], lines[2])
-        assert res == 20
+        assert res == 100
 
     def test_example_file(self):
         runner = DayThree()
@@ -98,4 +98,4 @@ class TestDay3:
         res = runner.process_input(test_path, test_name)
         assert res == 527446 # part 1
         res = runner.process_input2(test_path, test_name)
-        assert res == 527446 # part 2
+        assert res == 73201705 # part 2
