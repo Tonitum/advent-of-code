@@ -30,5 +30,5 @@ class TestDay4:
         assert res < 108326 # part 1
         assert res == 18653 # part 1
         res = runner.process_input2(test_path, test_name)
-        assert res == 18653 # part 1
+        assert res == 5921508 # part 1
 
