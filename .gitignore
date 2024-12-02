@@ -1,2 +1,9 @@
 **/target/*
-**/__pycache__/*
+**/*/__pycache__
+**/*/.venv
+.venv
+poetry.lock
+aoc-2024-day1/target
+**/*/input_*.txt
+**/*/input*.txt
+day1/target
