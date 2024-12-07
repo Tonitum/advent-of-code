@@ -2,5 +2,6 @@
 **/*/.venv
 .venv
 poetry.lock
-aoc-2024-day1/target
-**/*/input_*.txt
+# don't accidentally include the aoc input
+**/*/input*.txt
+**/*/target
