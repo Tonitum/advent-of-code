@@ -1,6 +1,5 @@
 import * as fs from 'fs';
 import path from 'path';
-import { callbackify } from 'util';
 
 function loadInput(fileName: String): Array<String> {
     const srcFolder = path.dirname(__dirname);
