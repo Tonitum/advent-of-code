@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^22.10.1",
+    "i": "^0.3.7",
+    "npm": "^10.9.2",
+    "yarn": "^1.22.22"
+  }
+}

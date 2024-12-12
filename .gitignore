@@ -5,3 +5,5 @@ poetry.lock
 # don't accidentally include the aoc input
 **/*/input*.txt
 **/*/target
+**/*/node_modules
+**/*/build
