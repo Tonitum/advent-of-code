@@ -15,6 +15,7 @@ function parseLine(line: String): number[] {
     })
     return parts
 }
+
 function isLevelSafe(level: number[]): boolean {
     let isUp = null;
     let curr = level[0]
@@ -46,16 +47,37 @@ function isLevelSafe(level: number[]): boolean {
     return true;
 }
 
+function isLevelPossiblySafe(level: number[]): boolean {
+    if (isLevelSafe(level)) {
+        return true;
+    }
+    for (let i = 0; i < level.length; i++) {
+        let removedElement = level.splice(i, 1)
+        if (isLevelSafe(level)) {
+            return true;
+        }
+        level.splice(i, 0, removedElement[0])
+    }
+
+    return false;
+}
+
 function main() {
     let lines: String[] = loadInput("input.txt");
     let safeCount = 0;
+    let possibleSafeCount = 0;
     lines.forEach((line) => {
         if (line == "") { return }
         let parsedLine = parseLine(line)
         if (isLevelSafe(parsedLine)) {
             safeCount++;
         }
+        if (isLevelPossiblySafe(parsedLine)) {
+            possibleSafeCount++;
+        }
     })
     console.log(safeCount)
+    console.log(possibleSafeCount)
 }
+
 main()
